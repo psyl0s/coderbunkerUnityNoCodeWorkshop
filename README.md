@@ -1,7 +1,7 @@
 # coderbunkerUnityNoCodeWorkshop
 >A demo created to learn unity without knowing how to code.
 
-![BANNER](https://github.com/Betarabbit14/gamifyExcelDemo/blob/master/banner.png)
+![BANNER](https://raw.githubusercontent.com/Betarabbit14/coderbunkerUnityNoCodeWorkshop/master/banner.png)
 
 ### Background
 This is the class used in the no code workshop for Unity at CoderBunker.
