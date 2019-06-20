@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
@@ -15,6 +13,12 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+        //respawnCheck
+        if (transform.position.y < -30)
+        {
+            Respawn();
+        }
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
@@ -36,6 +40,11 @@ public class PlayerMovement : MonoBehaviour {
 
 	}
 
+    public void Respawn()
+    {
+        var startPos = new Vector2(-1,2);
+        transform.position = startPos;
+    }
 	public void OnLanding ()
 	{
 		animator.SetBool("IsJumping", false);
